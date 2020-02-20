@@ -1,68 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://github.com/CourtneyDM/courtneydm.tech/blob/master/public/assets/images/profile.JPG" alt="Courtney Montgomery Profile Pic" width="250px"/>
 
-## Available Scripts
+# Who am I
 
-In the project directory, you can run:
+I am an IT professional-turned Full Stack MERN developer who is looking to join a team of individuals with a broad understanding of web development technologies. I am seeking opportunities in the Dallas, Texas and surrounding areas.
 
-### `yarn start`
+My passion for development started during my teenage years, where the first languages I learned were Pascal and C. The desire to deepen my knowledge grew stronger; I went on to receive a CS degree from the University of North Texas.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I have an extensive background in the IT industry; the past ten-plus years have allowed me to strengthen my communication, collaborative and leadership skills. I am an avid learner of all things web development, and am eager to knowledge share with others.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## My Skills
 
-### `yarn test`
+I am proficient in front-end technologies, such as Javascript, HTML, CSS, React and APIs. I am also proficient with back-end technologies such as MySQL, MongoDB/Mongoose and MySQL. In addition to my knowledge of web development, I have a solid foundation in lower-level Object-Oriented programming languages such as C++ and C-Sharp (C#). [View my resume here](https://drive.google.com/open?id=1JauLYHSuZXDIhKJvuvre7jwppgVL0H7N)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Let's Connect
 
-### `yarn build`
+Whether it be a job or collaboration opportunity, I would love to hear from you. Feel free to follow my repo on [Github](https://github.com/courtneydm), or you can connect with me on [LinkedIn](https://www.linkedin.com/in/courtneydm) and find me on [StackOverflow](https://stackoverflow.com/users/8827802/courtney-m).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright &copy; 2018 Courtney Montgomery | [https://courtneydm.github.io](https://courtneydm.github.io)
