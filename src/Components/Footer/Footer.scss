@@ -1,0 +1,73 @@
+:root {
+  --blue: #0049e8e7;
+  --box-shadow: 10px 10px 25px #808080;
+  --font-family-default: "Monda", sans-serif;
+  --font-heading: "Economica", sans-serif;
+  --font-size-default: 62.5%;
+  --content-font-size: 1.8rem;
+  --grey: #808080;
+  --font-heading-size: 2rem;
+  --height: 60px;
+  --lightgrey: #b6b6b6;
+  --orange: #ff7200;
+  --text-shadow: 10px 10px 25px #000;
+  --white: #e5f2ee;
+}
+
+$blue: var(--blue);
+$grey: var(--grey);
+$font-family: var(--font-family-default);
+$font-heading: var(--font-heading);
+$font-size: var(--font-size-default);
+$content-font-size: var(--content-font-size);
+$height: var(--height);
+$lightgrey: var(--lightgrey);
+$white: var(--white);
+$orange: var(--orange);
+$box-shadow: var(--box-shadow);
+$text-shadow: var(--text-shadow);
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  font-family: $font-family;
+  font-size: $font-size;
+  letter-spacing: 0.03rem;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.flex_col {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flex_row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.site__footer {
+  align-items: center;
+  background-color: $orange;
+  padding: 2rem 0;
+  text-align: center;
+  .content__default_font {
+    color: $white;
+    font-family: $font-heading;
+    font-size: $content-font-size;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+    a {
+      color: $white;
+      font-family: $font-heading;
+      font-size: $content-font-size;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $blue;
+      text-shadow: $text-shadow;
+    }
+  }
+}

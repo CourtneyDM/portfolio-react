@@ -1,0 +1,121 @@
+:root {
+  --height: 60px;
+  --blue: #0049e8e7;
+  --grey: #808080;
+  --lightgrey: #b6b6b6;
+  --orange: #ff7200;
+  --white: #e5f2ee;
+  --default-font-family: "Monda", sans-serif;
+  --default-font-size: 62.5%;
+  --heading-font-family: "Economica", sans-serif;
+  --heading-font-size: 2rem;
+  --content-font-size: 1.8rem;
+  --box-shadow: 10px 10px 25px #808080;
+  --text-shadow: 10px 10px 25px #000;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: var(--default-font-family);
+  font-size: var(--default-font-size);
+  letter-spacing: 0.03rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.flex_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.skills__section {
+  width: 80%;
+  margin: auto;
+  padding: 7rem 0 5rem;
+  border-bottom: 0.2rem solid var(--grey);
+}
+
+.skills__section .skills__heading {
+  font-family: var(--heading-font-family);
+  font-size: 4rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+.skills__section .skills__content {
+  padding-top: 5rem;
+}
+
+.skills__section .skills__content .content__default_font {
+  font-size: var(--content-font-size);
+  padding-left: 4rem;
+}
+
+.skills__section .skills__content .skills__full_stack {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.skills__section .skills__content .skills__full_stack .skills__front_end {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-right: 1.5rem;
+}
+
+.skills__section .skills__content .skills__full_stack .skills__front_end .front_end_heading {
+  font-family: var(--heading-font-family);
+  font-size: 3.5rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.skills__section .skills__content .skills__full_stack .skills__front_end .front_end_logos {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills__section .skills__content .skills__full_stack .skills__front_end .front_end_logos .front_end_logo {
+  height: auto;
+  padding: 1rem;
+  width: 8rem;
+}
+
+.skills__section .skills__content .skills__full_stack .skills__back_end {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-left: 1.5rem;
+}
+
+.skills__section .skills__content .skills__full_stack .skills__back_end .back_end_heading {
+  font-family: var(--heading-font-family);
+  font-size: 3.5rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.skills__section .skills__content .skills__full_stack .skills__back_end .back_end_logos {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills__section .skills__content .skills__full_stack .skills__back_end .back_end_logos .back_end_logo {
+  height: auto;
+  padding: 1rem;
+  width: 8rem;
+}
+/*# sourceMappingURL=Skills.css.map */

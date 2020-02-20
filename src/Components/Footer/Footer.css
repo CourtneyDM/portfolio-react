@@ -1,0 +1,77 @@
+:root {
+  --blue: #0049e8e7;
+  --box-shadow: 10px 10px 25px #808080;
+  --font-family-default: "Monda", sans-serif;
+  --font-heading: "Economica", sans-serif;
+  --font-size-default: 62.5%;
+  --content-font-size: 1.8rem;
+  --grey: #808080;
+  --font-heading-size: 2rem;
+  --height: 60px;
+  --lightgrey: #b6b6b6;
+  --orange: #ff7200;
+  --text-shadow: 10px 10px 25px #000;
+  --white: #e5f2ee;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  letter-spacing: 0.03rem;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.flex_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.flex_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.site__footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--orange);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.site__footer .content__default_font {
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: var(--content-font-size);
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+}
+
+.site__footer .content__default_font a {
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: var(--content-font-size);
+  text-decoration: none;
+}
+
+.site__footer .content__default_font a:hover {
+  color: var(--blue);
+  text-shadow: var(--text-shadow);
+}
+/*# sourceMappingURL=Footer.css.map */

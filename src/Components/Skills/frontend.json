@@ -1,0 +1,30 @@
+[
+  {
+    "img": "../../assets/img/icons/html5.svg",
+    "name": "HTML5"
+  },
+  {
+    "img": "../../assets/img/icons/css3.svg",
+    "name": "CSS3"
+  },
+  {
+    "img": "../../assets/img/icons/javascript.svg",
+    "name": "Javascript"
+  },
+  {
+    "img": "../../assets/img/icons/jquery.svg",
+    "name": "jQuery"
+  },
+  {
+    "img": "../../assets/img/icons/bootstrap4.svg",
+    "name": "Bootstrap"
+  },
+  {
+    "img": "../../assets/img/icons/react.svg",
+    "name": "ReactJS"
+  },
+  {
+    "img": "../../assets/img/icons/angular.svg",
+    "name": "Angular"
+  }
+]
