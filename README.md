@@ -1,6 +1,6 @@
-<img src="https://github.com/CourtneyDM/courtneydm.tech/blob/master/public/assets/images/profile.JPG" alt="Courtney Montgomery Profile Pic" width="250px"/>
+<!-- ><img src="https://github.com/CourtneyDM/courtneydm.tech/blob/master/public/assets/images/profile.JPG" alt="Courtney Montgomery Profile Pic" width="250px"/> -->
 
-# Who am I
+# Who am I [![Netlify Status](https://api.netlify.com/api/v1/badges/4bf527cd-9643-4162-9e13-8583cbdfddb6/deploy-status)](https://app.netlify.com/sites/courtneydm/deploys)
 
 I am an IT professional-turned Full Stack MERN developer who is looking to join a team of individuals with a broad understanding of web development technologies. I am seeking opportunities in the Dallas, Texas and surrounding areas.
 
