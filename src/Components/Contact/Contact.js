@@ -1,4 +1,4 @@
-import "./Contact.css";
+// import "./Contact.css";
 import React from "react";
 import Header from "../Header";
 import { Section } from "../Section";

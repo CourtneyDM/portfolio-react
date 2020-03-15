@@ -6,10 +6,9 @@ import Header from "../Header";
 const Navbar = () => {
   return (
     <Header className='site__header'>
-      <nav className='navbar flex_row'>
-        {" "}
+      <nav className='navbar'>
         <h1 className='navbar__heading'>Courtney Montgomery</h1>
-        <List className='navbar__nav flex_row'>
+        <List className='navbar__nav'>
           <ListItem href='#about' text='About' />
           <ListItem href='#skills' text='Skills' />
           <ListItem href='#portfolio' text='Portfolio' />

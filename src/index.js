@@ -12,11 +12,11 @@ class App extends React.Component {
     return (
       <Fragment>
         <Navbar />
-        <About />
+        {/* <About />
         <Skills />
         <Portfolio />
         <Contact />
-        <Footer />
+        <Footer /> */}
       </Fragment>
     );
   }

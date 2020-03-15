@@ -1,4 +1,4 @@
-import "./Skills.css";
+// import "./Skills.css";
 import React, { Component } from "react";
 import Header from "../Header";
 import { Main } from "../Section";
