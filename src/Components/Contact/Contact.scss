@@ -45,7 +45,7 @@ $white: var(--white);
     flex-flow: column;
     margin: 0 auto;
     max-width: fit-content;
-    padding: 10rem 0 3.5rem;
+    padding: 13rem 0 3.5rem;
     width: 80%;
     .contact__header {
       .contact__heading {
@@ -115,9 +115,9 @@ $white: var(--white);
             background-color: $orange;
             border-radius: 0.3rem;
             color: $white;
-            font-size: 1.6rem;
-            line-height: 1.8rem;
-            padding: 1rem;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            padding: 0.5rem;
           }
           .contact__form_button:hover {
             color: $blue;

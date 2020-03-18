@@ -73,17 +73,19 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
     list-style-type: none;
+    position: relative;
     text-align: right;
   }
-  .site__header .navbar .navbar__nav .navbar__list_item,
-  .site__header .navbar .navbar__nav .navbar__nav_hamburger {
+  .site__header .navbar .navbar__nav .navbar__list_link,
+  .site__header .navbar .navbar__nav #navbar__hamburger {
     color: #fff;
     font-size: 1.2rem;
     line-height: 1.2rem;
     text-decoration: none;
   }
-  .site__header .navbar .navbar__nav .navbar__list_item {
+  .site__header .navbar .navbar__nav .navbar__list_link {
     display: none;
+    padding: 0.3rem 0;
   }
 }
 

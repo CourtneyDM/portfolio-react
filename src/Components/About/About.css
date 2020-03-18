@@ -23,8 +23,8 @@
 @media screen and (min-width: 320px) {
   .hero__section {
     border-bottom: 0.2rem solid var(--grey);
-    margin: auto;
-    padding: 10rem 0 3.5rem;
+    margin: 0 auto;
+    padding: 13rem 0 3.5rem;
     width: 80%;
   }
   .hero__section .hero__header .hero__heading {
