@@ -1,12 +1,12 @@
 :root {
   --blue: #0049e8e7;
   --box-shadow: 10px 10px 25px #808080;
-  --font-family-default: "Monda", sans-serif;
-  --font-heading: "Economica", sans-serif;
-  --font-size-default: 62.5%;
+  --default-font-family: "Monda", sans-serif;
+  --heading-font-family: "Economica", sans-serif;
+  --default-font-size: 62.5%;
   --content-font-size: 1.8rem;
   --grey: #808080;
-  --font-heading-size: 2rem;
+  --heading-font-size: 2.8rem;
   --height: 60px;
   --lightgrey: #b6b6b6;
   --orange: #ff7200;
@@ -15,109 +15,114 @@
 }
 
 $blue: var(--blue);
-$grey: var(--grey);
-$font-family: var(--font-family-default);
-$font-heading: var(--font-heading);
-$font-size: var(--font-size-default);
+$box-shadow: var(--box-shadow);
 $content-font-size: var(--content-font-size);
+$default-font-family: var(--default-font-family);
+$default-font-size: var(--default-font-size);
+$grey: var(--grey);
+$heading-font-family: var(--heading-font-family);
+$heading-font-size: var(--heading-font-size);
 $height: var(--height);
 $lightgrey: var(--lightgrey);
-$white: var(--white);
 $orange: var(--orange);
-$box-shadow: var(--box-shadow);
 $text-shadow: var(--text-shadow);
+$white: var(--white);
 
 * {
   box-sizing: border-box;
   position: relative;
-  font-family: $font-family;
-  font-size: $font-size;
+  font-family: $default-font-family;
+  font-size: $default-font-size;
   letter-spacing: 0.03rem;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
 
-.flex_col {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.flex_row {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.contact__section {
-  width: 80%;
-  margin: auto;
-  padding: 7rem 0 10rem;
-  .contact__heading {
-    font-family: $font-heading;
-    font-size: 4rem;
-    line-height: 4.5rem;
-    text-align: center;
-  }
-  .contact__content {
-    .content__default_font {
-      font-size: $content-font-size;
-      padding: 3rem;
-      text-align: center;
-    }
-    .contact__option {
-      padding: 1.2rem;
-
-      // Contact links
-      .contact__links {
-        flex: 2;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        .contact__details {
-          padding: 0.5rem 1.5rem;
-          .contact__icon {
-            height: auto;
-            vertical-align: middle;
-            width: 9rem;
-          }
-        }
-        a {
-          color: $orange;
-          padding-left: 2rem;
-          text-decoration: none;
-        }
-        a:hover {
-          color: $blue;
-          text-shadow: $text-shadow;
-        }
+@media screen and (min-width: 320px) {
+  .contact__section {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding: 10rem 0 3.5rem;
+    width: 80%;
+    .contact__header {
+      .contact__heading {
+        font-family: $heading-font-family;
+        font-size: $heading-font-size;
+        line-height: 4.2rem;
+        text-align: center;
+        text-transform: uppercase;
       }
-
-      // Email form
-      .contact__form {
-        flex: 2;
-        .contact__form_group {
-          padding-bottom: 1.5rem;
-          .contact__form_label {
+    }
+    .contact__content_container {
+      align-items: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      min-width: fit-content;
+      padding-top: 4rem;
+      .contact__content {
+        font-size: $content-font-size;
+        line-height: 2.4rem;
+      }
+      .contact__option {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        .contact__links,
+        .contact__form {
+          display: flex;
+          flex: 1;
+          flex-flow: column;
+          justify-content: space-between;
+          margin: 1rem 0;
+        }
+        .contact__links {
+          .contact__details {
+            align-items: center;
+            display: flex;
+            padding: 0.5rem 0;
+            img {
+              height: auto;
+              width: 3rem;
+            }
+            a {
+              color: $orange;
+              padding-left: 1rem;
+            }
+          }
+        }
+        .contact__form {
+          .contact__form_group {
+            padding: 1rem 0;
+            .contact__form_label {
+              font-size: 1.4rem;
+              line-height: 1.6rem;
+            }
+            .contact__form_input {
+              border: 0.1rem solid $lightgrey;
+              border-radius: 0.3rem;
+              cursor: text;
+              font-size: 1.4rem;
+              line-height: 1.6rem;
+              padding: 0.5rem;
+              width: 100%;
+            }
+          }
+          .contact__form_button {
+            background-color: $orange;
+            border-radius: 0.3rem;
+            color: $white;
             font-size: 1.6rem;
+            line-height: 1.8rem;
+            padding: 1rem;
           }
-          .form_input_control {
-            border-radius: 0.2rem;
-            cursor: text;
-            font-size: 1.4rem;
-            padding: 0.5rem;
-            width: 90%;
+          .contact__form_button:hover {
+            color: $blue;
+            text-shadow: $text-shadow;
           }
-        }
-        .contact__form_button {
-          background-color: $orange;
-          border-radius: 0.3rem;
-          color: $white;
-          font-size: 1.8rem;
-          line-height: 2rem;
-          padding: 1rem;
-        }
-        .contact__form_button:hover {
-          color: $blue;
-          text-shadow: $text-shadow;
         }
       }
     }

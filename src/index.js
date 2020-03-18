@@ -15,7 +15,7 @@ class App extends React.Component {
         <About />
         <Skills />
         <Portfolio />
-        {/* <Contact /> */}
+        <Contact />
         <Footer />
       </Fragment>
     );

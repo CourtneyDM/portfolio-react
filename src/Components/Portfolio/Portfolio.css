@@ -104,6 +104,7 @@
   .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption {
     font-size: 1.2rem;
     line-height: 1.6rem;
+    padding-top: 1rem;
   }
 }
 /*# sourceMappingURL=Portfolio.css.map */

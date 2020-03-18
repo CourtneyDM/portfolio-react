@@ -1,4 +1,4 @@
-// import "./Contact.css";
+import "./Contact.css";
 import React from "react";
 import Header from "../Header";
 import { Section } from "../Section";
@@ -9,14 +9,14 @@ const Contact = props => {
     <Section className='contact__section' id='contact'>
       <Header className='contact__header'>
         <h1 className='contact__heading'>Let's Connect</h1>
-        <Main className='contact__content'>
-          <p className='content__default_font'>
+        <Main className='contact__content_container'>
+          <p className='contact__content'>
             Want to collaborate on a project? Have a development opportunity?
             Let's connect. I look forward to hearing from you.
           </p>
-          <div className='contact__option flex_row'>
+          <div className='contact__option'>
             {/* Contact Links */}
-            <article className='contact__links flex_col'>
+            <article className='contact__links'>
               <div className='contact__details' id='contact__link_email'>
                 <img
                   src='../../../assets/img/icons/circle_email.svg'
@@ -61,7 +61,7 @@ const Contact = props => {
                 </a>
               </div>
             </article>
-            <article className='contact__form flex_col'>
+            <article className='contact__form'>
               <form
                 action='https://formspree.io/courtney@courtneydm.tech'
                 method='post'
@@ -74,9 +74,9 @@ const Contact = props => {
                   <input
                     type='text'
                     name='name'
-                    className='form_input_control'
+                    className='contact__form_input'
                     placeholder='Your name here'
-                    size='60'
+                    size=''
                     id='form_input_name'
                   />
                 </div>
@@ -88,7 +88,7 @@ const Contact = props => {
                   <input
                     type='email'
                     name='_replyTo'
-                    className='form_input_control'
+                    className='contact__form_input'
                     placeholder='your_email@domain.com'
                     size='60'
                     id='form_input_email'
@@ -101,9 +101,9 @@ const Contact = props => {
                   <br />
                   <textarea
                     name='message'
-                    cols='60'
+                    cols='0'
                     rows='5'
-                    className='form_input_control'
+                    className='contact__form_input'
                     placeholder='Your message here...'
                     id='form_input_message'
                   ></textarea>
