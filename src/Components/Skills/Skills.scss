@@ -79,3 +79,9 @@ $content-font-size: var(--content-font-size);
     }
   }
 }
+
+@media screen and (min-width: 480px) {
+  .skills__section {
+    padding-top: 5rem;
+  }
+}

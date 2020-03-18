@@ -82,7 +82,8 @@ $text-shadow: var(--text-shadow);
           text-align: center;
           .project__heading {
             font-family: $heading-font-family;
-            font-size: $content-font-size;
+            font-size: 1.8rem;
+            padding: 1rem 0;
             text-align: center;
           }
           .project__img {
@@ -93,6 +94,22 @@ $text-shadow: var(--text-shadow);
             font-size: 1.2rem;
             line-height: 1.6rem;
             padding-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio__section {
+    padding-top: 5rem;
+    .portfolio__content_container {
+      .portfolio__projects {
+        .portfolio__project {
+          .project__img {
+            height: auto;
+            width: 35rem;
           }
         }
       }

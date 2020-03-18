@@ -128,3 +128,25 @@ $white: var(--white);
     }
   }
 }
+
+@media screen and (min-width: 480px) {
+  .contact__section {
+    padding-top: 5rem;
+    .contact__content_container {
+      .contact__option {
+        .contact__links {
+          .contact__details {
+            img {
+              height: auto;
+              width: 5rem;
+            }
+            a {
+              font-size: 1.4rem;
+              padding-left: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

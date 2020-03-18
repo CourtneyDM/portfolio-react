@@ -34,7 +34,7 @@
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 1rem;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -91,19 +91,21 @@
 
 @media screen and (min-width: 480px) {
   .site__header .navbar .navbar__heading {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
   .site__header .navbar .navbar__nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .site__header .navbar .navbar__nav .navbar__nav_hamburger {
+  .site__header .navbar .navbar__nav #navbar__hamburger {
     display: none;
   }
-  .site__header .navbar .navbar__nav .navbar__list_item {
+  .site__header .navbar .navbar__nav .navbar__list_link {
     display: inline;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
     text-align: right;
     padding: 0 0.5rem;
   }

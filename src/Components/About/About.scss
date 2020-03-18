@@ -67,3 +67,9 @@ $box-shadow: var(--box-shadow);
     }
   }
 }
+
+@media screen and (min-width: 480px) {
+  .hero__section {
+    padding-top: 8rem;
+  }
+}
