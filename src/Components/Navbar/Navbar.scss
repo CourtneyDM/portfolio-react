@@ -40,41 +40,70 @@ $text-shadow: var(--text-shadow);
 
 // TODO: separate the font style, size, color and background color outside the media query
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+@media screen and (min-width: 320px) {
   .site__header {
-    align-items: center;
-    border: 1px dotted blue;
-    box-shadow: $box-shadow;
     background-color: $orange;
-    color: $white;
-    height: 5rem;
-    justify-content: center;
-    line-height: 0.5rem;
-    padding: 2rem 1rem;
+    box-shadow: $box-shadow;
+    min-height: fit-content;
+    padding: 1.5rem 0;
     position: fixed;
     width: 100%;
-    vertical-align: middle;
     z-index: 1;
     .navbar {
-      border: 1px dotted green;
       display: flex;
       flex-flow: row wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 85%;
       .navbar__heading {
+        color: #fff;
+        flex: 1;
         font-family: $font-heading;
-        flex: 2;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
       }
       .navbar__nav {
-        flex: 2;
+        align-items: center;
+        flex: 1;
+        justify-content: flex-end;
         list-style-type: none;
-        .navbar__list_item {
+        text-align: right;
+        .navbar__list_item,
+        .navbar__nav_hamburger {
           color: #fff;
-          font-size: 1rem;
-          text-align: right;
+          font-size: 1.2rem;
+          line-height: 1.2rem;
           text-decoration: none;
         }
+        .navbar__list_item {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .site__header {
+    .navbar {
+      .navbar__heading {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
+      .navbar__nav {
+        display: flex;
+        .navbar__nav_hamburger {
+          display: none;
+        }
+        .navbar__list_item {
+          display: inline;
+          text-align: right;
+          padding: 0 0.5rem;
+        }
+
         .navbar__list_item:hover {
           color: $blue;
+          display: inline;
           text-shadow: $text-shadow;
         }
       }
@@ -82,35 +111,13 @@ $text-shadow: var(--text-shadow);
   }
 }
 
-/*.site__header {
-  align-items: center;
-  box-shadow: $box-shadow;
-  background-color: $orange;
-  color: $white;
-  height: 6rem;
-  justify-content: center;
-  line-height: 0.5rem;
-  padding: 2.5rem 10rem;
-  position: fixed;
-  width: 100%;
-  vertical-align: middle;
-  z-index: 1;
-  .navbar__heading {
-    font-family: $font-heading;
-    font-size: 4rem;
-    flex: 5;
-  }
-  .navbar__nav {
-    list-style-type: none;
-    .navbar__list_item {
-      text-decoration: none;
-      color: $white;
-      font-size: 2rem;
-      padding: 1rem;
-    }
-    .navbar__list_item:hover {
-      color: $blue;
-      text-shadow: $text-shadow;
+@media screen and (min-width: 768px) {
+  .site__header {
+    .navbar {
+      .navbar__heading {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+      }
     }
   }
-}*/
+}

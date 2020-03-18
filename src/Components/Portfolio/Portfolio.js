@@ -1,4 +1,4 @@
-// import "./Portfolio.css";
+import "./Portfolio.css";
 import React, { Component } from "react";
 import Header from "../Header";
 import { Main } from "../Section";
@@ -16,8 +16,8 @@ class Portfolio extends Component {
       <Section className='portfolio__section' id='portfolio'>
         <Header className='portfolio__header'>
           <h1 className='portfolio__heading'>Portfolio</h1>
-          <Main className='portfolio__content'>
-            <p className='content__default_font'>
+          <Main className='portfolio__content_container'>
+            <p className='portfolio__content'>
               Below you will find a few of my projects, along with the tools &
               technologies used to build them. More details, as well as other
               projects, can be found on my{" "}
@@ -30,7 +30,7 @@ class Portfolio extends Component {
               </a>
               . Resume available upon request.
             </p>
-            <div className='portfolio__projects flex_row'>
+            <div className='portfolio__projects'>
               {this.state.projects.map((project, item) => {
                 return (
                   <Figure

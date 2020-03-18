@@ -9,13 +9,13 @@ const Navbar = () => {
       <nav className='navbar'>
         <h1 className='navbar__heading'>Courtney Montgomery</h1>
         <List className='navbar__nav'>
+          <a href='#' className='navbar__nav_hamburger icon'>
+            <i className='fa fa-bars'></i>
+          </a>
           <ListItem href='#about' text='About' />
           <ListItem href='#skills' text='Skills' />
           <ListItem href='#portfolio' text='Portfolio' />
           <ListItem href='#contact' text='Contact' />
-          {/* <a href='javascript:void(0)' className='icon'>
-      <i className='fa fa-bars'></i>
-    </a> */}
         </List>
       </nav>
     </Header>

@@ -1,31 +1,20 @@
 :root {
-  --height: 60px;
-  --blue: #0049e8e7;
   --grey: #808080;
-  --lightgrey: #b6b6b6;
-  --orange: #ff7200;
-  --white: #e5f2ee;
   --default-font-family: "Monda", sans-serif;
   --default-font-size: 62.5%;
   --heading-font-family: "Economica", sans-serif;
-  --heading-font-size: 2rem;
-  --content-font-size: 1.8rem;
+  --heading-font-size: 3.2rem;
+  --content-font-size: 1.6rem;
   --box-shadow: 10px 10px 25px #808080;
-  --text-shadow: 10px 10px 25px #000;
 }
 
-$height: var(--height);
-$blue: var(--blue);
 $grey: var(--grey);
-$lightgrey: var(--lightgrey);
-$orange: var(--orange);
-$white: var(--white);
 $font-family: var(--default-font-family);
 $font-size: var(--default-font-size);
-$font-heading: var(--heading-font-family);
+$heading-font-family: var(--heading-font-family);
+$heading-font-size: var(--heading-font-size);
 $content-font-size: var(--content-font-size);
 $box-shadow: var(--box-shadow);
-$text-shadow: var(--text-shadow);
 
 * {
   box-sizing: border-box;
@@ -38,39 +27,42 @@ $text-shadow: var(--text-shadow);
   scroll-behavior: smooth;
 }
 
-.flex_row {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.hero__section {
-  border-bottom: 0.2rem solid $grey;
-  width: 80%;
-  margin: 0 auto;
-  padding: 15rem 0 10rem;
-  .hero__heading {
-    font-family: $font-heading;
-    font-size: 4rem;
-    line-height: 4.5rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .hero__content {
-    padding-top: 5rem;
-    .hero.col_left {
-      flex: 1;
-      .hero__img {
-        border-radius: 0.5rem;
-        box-shadow: $box-shadow;
-        height: auto;
-        width: 30rem;
+@media screen and (min-width: 320px) {
+  .hero__section {
+    border-bottom: 0.2rem solid $grey;
+    margin: auto;
+    padding: 10rem 0 3.5rem;
+    width: 80%;
+    .hero__header {
+      .hero__heading {
+        font-family: $heading-font-family;
+        font-size: $heading-font-size;
+        line-height: 4.2rem;
+        text-align: center;
+        text-transform: uppercase;
       }
     }
-    .hero.col_right {
-      flex: 3;
-      .content__default_font {
-        font-size: $content-font-size;
-        padding-left: 5rem;
+    .hero__content {
+      align-items: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      padding-top: 4rem;
+      .hero__img_container {
+        justify-content: center;
+        .hero__img {
+          border-radius: 0.5rem;
+          box-shadow: $box-shadow;
+          height: auto;
+          width: 20rem;
+        }
+      }
+      .hero__about_container {
+        padding-top: 2rem;
+        .hero__about_content {
+          font-size: $content-font-size;
+          line-height: 2.4rem;
+        }
       }
     }
   }
