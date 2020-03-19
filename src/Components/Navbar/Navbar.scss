@@ -38,15 +38,18 @@ $text-shadow: var(--text-shadow);
   scroll-behavior: smooth;
 }
 
+#root {
+  width: 100%;
+}
+
 @media screen and (min-width: 320px) {
   .site__header {
     background-color: $orange;
     box-shadow: $box-shadow;
     min-height: fit-content;
-    min-width: fit-content;
     padding: 1.5rem 0 1rem;
     position: fixed;
-    // width: inherit;
+    width: 100%;
     z-index: 1;
     .navbar {
       display: flex;

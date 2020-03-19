@@ -26,6 +26,10 @@
   scroll-behavior: smooth;
 }
 
+#root {
+  width: 100%;
+}
+
 @media screen and (min-width: 320px) {
   .site__header {
     background-color: var(--orange);
@@ -34,11 +38,9 @@
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
     padding: 1.5rem 0 1rem;
     position: fixed;
+    width: 100%;
     z-index: 1;
   }
   .site__header .navbar {
