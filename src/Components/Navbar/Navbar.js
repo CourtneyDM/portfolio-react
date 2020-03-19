@@ -31,13 +31,13 @@ class Navbar extends Component {
         <nav className='navbar'>
           <h1 className='navbar__heading'>Courtney Montgomery</h1>
           <List className='navbar__nav'>
-            <a
+            <span
               href='#navbar__hamburger'
               id='navbar__hamburger'
               onClick={this.onClick}
             >
               <i className='fa fa-bars'></i>
-            </a>
+            </span>
             <ListItem
               className='navbar__list_item'
               href='#about'
