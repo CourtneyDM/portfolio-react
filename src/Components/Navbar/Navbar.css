@@ -93,6 +93,9 @@
     font-size: 1.2rem;
     padding: 0.3rem 0;
   }
+  .site__header .navbar .navbar__nav .navbar__list_link.active {
+    color: var(--blue);
+  }
   .site__header .navbar .navbar__nav .navbar__list_item:hover {
     color: var(--blue);
     display: inline;
