@@ -37,11 +37,11 @@ class Navbar extends Component {
       link = document.getElementById("nav_skills");
       this.setActiveLink(link);
     }
-    if (window.scrollY >= 1135 && window.scrollY < 3340) {
+    if (window.scrollY >= 1135 && window.scrollY < 3325) {
       link = document.getElementById("nav_portfolio");
       this.setActiveLink(link);
     }
-    if (window.scrollY >= 3340) {
+    if (window.scrollY >= 3325) {
       link = document.getElementById("nav_contact");
       this.setActiveLink(link);
     }
