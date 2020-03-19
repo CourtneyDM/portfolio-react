@@ -90,7 +90,14 @@ $white: var(--white);
             }
             a {
               color: $orange;
+              font-size: $content-font-size;
+              line-height: 2.4rem;
               padding-left: 1rem;
+              text-decoration: none;
+            }
+            a:hover {
+              color: $blue;
+              text-shadow: $text-shadow;
             }
           }
         }

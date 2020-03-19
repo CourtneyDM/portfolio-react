@@ -116,7 +116,14 @@
   }
   .contact__section .contact__content_container .contact__option .contact__links .contact__details a {
     color: var(--orange);
+    font-size: var(--content-font-size);
+    line-height: 2.4rem;
     padding-left: 1rem;
+    text-decoration: none;
+  }
+  .contact__section .contact__content_container .contact__option .contact__links .contact__details a:hover {
+    color: var(--blue);
+    text-shadow: var(--text-shadow);
   }
   .contact__section .contact__content_container .contact__option .contact__form .contact__form_group {
     padding: 1rem 0;
