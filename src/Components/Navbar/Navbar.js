@@ -29,19 +29,19 @@ class Navbar extends Component {
 
   onPageScroll = () => {
     let link;
-    if (window.scrollY >= 0 && window.scrollY < 527) {
+    if (window.scrollY >= 0 && window.scrollY < 500) {
       link = document.getElementById("nav_about");
       this.setActiveLink(link);
     }
-    if (window.scrollY >= 527 && window.scrollY < 1200) {
+    if (window.scrollY >= 500 && window.scrollY < 1135) {
       link = document.getElementById("nav_skills");
       this.setActiveLink(link);
     }
-    if (window.scrollY >= 1200 && window.scrollY < 3500) {
+    if (window.scrollY >= 1135 && window.scrollY < 3340) {
       link = document.getElementById("nav_portfolio");
       this.setActiveLink(link);
     }
-    if (window.scrollY >= 3500) {
+    if (window.scrollY >= 3340) {
       link = document.getElementById("nav_contact");
       this.setActiveLink(link);
     }
