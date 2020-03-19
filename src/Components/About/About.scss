@@ -73,3 +73,31 @@ $box-shadow: var(--box-shadow);
     padding-top: 8rem;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hero__section {
+    padding-top: 15rem;
+    .hero__header {
+      .hero__heading {
+        font-size: 2.8rem;
+        line-height: 4rem;
+      }
+    }
+    .hero__content {
+      flex-flow: row;
+      .hero__img_container {
+        flex: 1;
+        .hero__img {
+          margin-top: 1.5rem;
+          width: 22rem;
+        }
+      }
+      .hero__about_container {
+        flex: 3;
+        .hero__about_content {
+          padding-left: 3rem;
+        }
+      }
+    }
+  }
+}

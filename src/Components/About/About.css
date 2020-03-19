@@ -76,4 +76,37 @@
     padding-top: 8rem;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hero__section {
+    padding-top: 15rem;
+  }
+  .hero__section .hero__header .hero__heading {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+  .hero__section .hero__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  .hero__section .hero__content .hero__img_container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .hero__section .hero__content .hero__img_container .hero__img {
+    margin-top: 1.5rem;
+    width: 22rem;
+  }
+  .hero__section .hero__content .hero__about_container {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .hero__section .hero__content .hero__about_container .hero__about_content {
+    padding-left: 3rem;
+  }
+}
 /*# sourceMappingURL=About.css.map */

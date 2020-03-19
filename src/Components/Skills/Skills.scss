@@ -85,3 +85,20 @@ $content-font-size: var(--content-font-size);
     padding-top: 5rem;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .skills__section {
+    padding-top: 10rem;
+    .skills__content_container {
+      .skills__full_stack {
+        flex-flow: row;
+        .skills__front_end,
+        .skills__back_end {
+          .skills__stack_heading {
+            padding-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

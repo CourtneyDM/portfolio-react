@@ -43,9 +43,10 @@ $text-shadow: var(--text-shadow);
     background-color: $orange;
     box-shadow: $box-shadow;
     min-height: fit-content;
+    min-width: fit-content;
     padding: 1.5rem 0 1rem;
     position: fixed;
-    width: 100%;
+    // width: inherit;
     z-index: 1;
     .navbar {
       display: flex;
@@ -119,6 +120,12 @@ $text-shadow: var(--text-shadow);
       .navbar__heading {
         font-size: 3.2rem;
         line-height: 3.6rem;
+      }
+      .navbar__nav {
+        .navbar__list_link {
+          font-size: 1.4rem;
+          line-height: 1.6rem;
+        }
       }
     }
   }
