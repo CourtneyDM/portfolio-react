@@ -2,9 +2,9 @@ import React from "react";
 
 export const ListItem = props => {
   return (
-    <li className={props.className}>
+    <li id={props.id} className={props.className}>
       <a href={props.href} className='navbar__list_link'>
-        {props.text}
+        {props.children}
       </a>
     </li>
   );

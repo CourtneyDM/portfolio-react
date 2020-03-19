@@ -90,9 +90,19 @@
     text-decoration: none;
   }
   .site__header .navbar .navbar__nav .navbar__list_link {
-    display: none;
     font-size: 1.2rem;
     padding: 0.3rem 0;
+  }
+  .site__header .navbar .navbar__nav .navbar__list_item:hover {
+    color: var(--blue);
+    display: inline;
+    text-shadow: var(--text-shadow);
+  }
+  .site__header .navbar .navbar__nav .navbar__list_item:not(:first-child) {
+    display: none;
+  }
+  .site__header .navbar .navbar__nav.responsive .navbar__list_item {
+    display: block;
   }
 }
 
@@ -109,17 +119,12 @@
   .site__header .navbar .navbar__nav #navbar__hamburger {
     display: none;
   }
-  .site__header .navbar .navbar__nav .navbar__list_link {
-    display: inline;
+  .site__header .navbar .navbar__nav .navbar__list_item:not(:first-child) {
+    display: block;
     font-size: 1.1rem;
     line-height: 1.2rem;
     text-align: right;
     padding: 0 0.5rem;
-  }
-  .site__header .navbar .navbar__nav .navbar__list_item:hover {
-    color: var(--blue);
-    display: inline;
-    text-shadow: var(--text-shadow);
   }
 }
 

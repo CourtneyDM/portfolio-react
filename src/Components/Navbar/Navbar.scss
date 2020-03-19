@@ -81,9 +81,21 @@ $text-shadow: var(--text-shadow);
           text-decoration: none;
         }
         .navbar__list_link {
-          display: none;
           font-size: 1.2rem;
           padding: 0.3rem 0;
+        }
+        .navbar__list_item:hover {
+          color: $blue;
+          display: inline;
+          text-shadow: $text-shadow;
+        }
+        .navbar__list_item:not(:first-child) {
+          display: none;
+        }
+      }
+      .navbar__nav.responsive {
+        .navbar__list_item {
+          display: block;
         }
       }
     }
@@ -102,18 +114,12 @@ $text-shadow: var(--text-shadow);
         #navbar__hamburger {
           display: none;
         }
-        .navbar__list_link {
-          display: inline;
+        .navbar__list_item:not(:first-child) {
+          display: block;
           font-size: 1.1rem;
           line-height: 1.2rem;
           text-align: right;
           padding: 0 0.5rem;
-        }
-
-        .navbar__list_item:hover {
-          color: $blue;
-          display: inline;
-          text-shadow: $text-shadow;
         }
       }
     }
