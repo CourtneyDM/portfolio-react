@@ -1,16 +1,20 @@
 import "./Navbar.css";
 import React, { Component } from "react";
+// import ReactDOM from "react-dom";
 import { List, ListItem } from "../List";
 import Header from "../Header";
 
 class Navbar extends Component {
-  onClick = event => {
-    document.querySelectorAll(".navbar__list_link").forEach(item => {
-      item.classList.remove("active");
+  setActiveLink = menu_link => {
+    let active_links = document.querySelectorAll(".navbar__list_link");
+    active_links.forEach(link => {
+      link.setAttribute("class", "navbar__list_link");
     });
-
+    menu_link.setAttribute("class", "navbar__list_link active");
+  };
+  onClick = event => {
     let active_link = document.getElementById(event.target.id);
-    active_link.classList.add("active");
+    this.setActiveLink(active_link);
   };
 
   onMenuToggle = () => {
@@ -22,7 +26,28 @@ class Navbar extends Component {
       navbar.setAttribute("class", "navbar__nav");
     }
   };
+
+  onPageScroll = () => {
+    let link;
+    if (window.scrollY >= 0 && window.scrollY < 527) {
+      link = document.getElementById("nav_about");
+      this.setActiveLink(link);
+    }
+    if (window.scrollY >= 527 && window.scrollY < 1200) {
+      link = document.getElementById("nav_skills");
+      this.setActiveLink(link);
+    }
+    if (window.scrollY >= 1200 && window.scrollY < 3500) {
+      link = document.getElementById("nav_portfolio");
+      this.setActiveLink(link);
+    }
+    if (window.scrollY >= 3500) {
+      link = document.getElementById("nav_contact");
+      this.setActiveLink(link);
+    }
+  };
   render() {
+    document.addEventListener("scroll", this.onPageScroll);
     return (
       <Header className='site__header'>
         <nav className='navbar'>
