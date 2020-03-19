@@ -38,7 +38,7 @@
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
-    padding: 1.5rem 0 1rem;
+    padding: 1.5rem 0 0;
     position: fixed;
     width: 100%;
     z-index: 1;
