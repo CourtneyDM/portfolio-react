@@ -120,5 +120,114 @@ $text-shadow: var(--text-shadow);
 @media screen and (min-width: 768px) {
   .portfolio__section {
     padding-top: 10rem;
+    padding-bottom: 2rem;
+    .portfolio__header {
+      .portfolio__heading {
+        font-size: 2.6rem;
+        line-height: 2.6rem;
+      }
+    }
+    .portfolio__content_container {
+      .portfolio__projects {
+        flex-flow: row wrap;
+        .portfolio__project {
+          .project__heading {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+          }
+          .project__caption {
+            font-size: 1rem;
+            line-height: 1.4rem;
+            width: 60%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .portfolio__section {
+    .portfolio__content_container {
+      .portfolio__content,
+      .portfolio__content a {
+        font-size: 1.4rem;
+      }
+      .portfolio__projects {
+        .portfolio__project {
+          padding: 1rem;
+          .project__caption {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__section {
+    padding-top: 15rem;
+    .portfolio__header {
+      .portfolio__heading {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+      }
+    }
+    .portfolio__content_container {
+      .portfolio__content,
+      .portfolio__content a {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+      }
+      .portfolio__projects {
+        padding-top: 2rem;
+        .portfolio__project {
+          .project__heading {
+            font-size: 2.4rem;
+            line-height: 2.4rem;
+          }
+          .project__caption {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .portfolio__section {
+    .portfolio__header {
+      .portfolio__heading {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+    }
+    .portfolio__content_container {
+      .portfolio__content {
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+      }
+      .portfolio__projects {
+        .portfolio__project {
+          .project__heading {
+            font-size: 3.2rem;
+            line-height: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .portfolio__section {
+    width: 70%;
   }
 }
