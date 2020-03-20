@@ -35,12 +35,11 @@ class Navbar extends Component {
   };
 
   onPageScroll = () => {
-    console.log(this.state.width);
     let contact, portfolio, skills;
     if (this.state.width >= 320) {
-      skills = 860;
-      portfolio = 2080;
-      contact = 4350;
+      skills = 795;
+      portfolio = 2015;
+      contact = 4284;
     }
     if (this.state.width >= 480) {
       skills = 595;
