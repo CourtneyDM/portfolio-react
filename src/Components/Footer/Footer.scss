@@ -52,3 +52,44 @@ $white: var(--white);
     }
   }
 }
+
+@media screen and (min-width: 480px) {
+  .site__footer {
+    .site__footer_content,
+    .site__footer_content a {
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site__footer {
+    .site__footer_content,
+    .site__footer_content a {
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      padding: 1.5rem 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .site__footer {
+    .site__footer_content,
+    .site__footer_content a {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .site__footer {
+    .site__footer_content,
+    .site__footer_content a {
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+    }
+  }
+}
