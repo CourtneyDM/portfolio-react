@@ -114,6 +114,9 @@
 }
 
 @media screen and (min-width: 480px) {
+  .site__header {
+    padding: 1.5rem 0;
+  }
   .site__header .navbar .navbar__heading {
     font-size: 2rem;
     line-height: 2rem;
@@ -131,7 +134,7 @@
     font-size: 1.1rem;
     line-height: 1.2rem;
     text-align: right;
-    padding: 0 0.5rem;
+    padding: 0 0.4rem;
   }
 }
 
@@ -176,6 +179,12 @@
     font-size: 2.2rem;
     line-height: 2.4rem;
     padding: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .site__header .navbar {
+    width: 90%;
   }
 }
 

@@ -110,6 +110,7 @@ $text-shadow: var(--text-shadow);
 
 @media screen and (min-width: 480px) {
   .site__header {
+    padding: 1.5rem 0;
     .navbar {
       .navbar__heading {
         font-size: 2rem;
@@ -125,7 +126,7 @@ $text-shadow: var(--text-shadow);
           font-size: 1.1rem;
           line-height: 1.2rem;
           text-align: right;
-          padding: 0 0.5rem;
+          padding: 0 0.4rem;
         }
       }
     }
@@ -184,6 +185,14 @@ $text-shadow: var(--text-shadow);
           padding: 0 0.5rem;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .site__header {
+    .navbar {
+      width: 90%;
     }
   }
 }
