@@ -104,6 +104,11 @@
 @media screen and (min-width: 768px) {
   .skills__section {
     padding-top: 10rem;
+    padding-bottom: 2rem;
+  }
+  .skills__section .skills__header .skills__heading {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
   }
   .skills__section .skills__content_container .skills__full_stack {
     -webkit-box-orient: horizontal;
@@ -114,6 +119,80 @@
   .skills__section .skills__content_container .skills__full_stack .skills__front_end .skills__stack_heading,
   .skills__section .skills__content_container .skills__full_stack .skills__back_end .skills__stack_heading {
     padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .skills__section .skills__content_container .skills__content {
+    font-size: 1.4rem;
+  }
+  .skills__section .skills__content_container .skills__full_stack .skills__front_end .skills__stack_heading,
+  .skills__section .skills__content_container .skills__full_stack .skills__back_end .skills__stack_heading {
+    font-size: 2.2rem;
+  }
+  .skills__section .skills__content_container .skills__full_stack .skills__front_end .skills__stack_logos,
+  .skills__section .skills__content_container .skills__full_stack .skills__back_end .skills__stack_logos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills__section {
+    padding-top: 15rem;
+  }
+  .skills__section .skills__header .skills__heading {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+  .skills__section .skills__content_container .skills__content {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+  .skills__section .skills__content_container .skills__full_stack .skills__front_end .skills__stack_heading,
+  .skills__section .skills__content_container .skills__full_stack .skills__back_end .skills__stack_heading {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+  .skills__section .skills__content_container .skills__full_stack .skills__front_end .skills__stack_logos .skills__stack_logo,
+  .skills__section .skills__content_container .skills__full_stack .skills__back_end .skills__stack_logos .skills__stack_logo {
+    width: 8.5rem;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .skills__section .skills__header .skills__heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .skills__section .skills__content_container .skills__content {
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+  }
+  .skills__section .skills__content_container .skills__full_stack {
+    padding-top: 6.5rem;
+  }
+  .skills__section .skills__content_container .skills__full_stack .skills__front_end,
+  .skills__section .skills__content_container .skills__full_stack .skills__back_end {
+    padding: 2rem;
+  }
+  .skills__section .skills__content_container .skills__full_stack .skills__front_end .skills__stack_heading,
+  .skills__section .skills__content_container .skills__full_stack .skills__back_end .skills__stack_heading {
+    font-size: 3.6rem;
+    line-height: 4rem;
+    padding-bottom: 4rem;
+  }
+  .skills__section .skills__content_container .skills__full_stack .skills__front_end .skills__stack_logos .skills__stack_logo,
+  .skills__section .skills__content_container .skills__full_stack .skills__back_end .skills__stack_logos .skills__stack_logo {
+    width: 12rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .skills__section {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=Skills.css.map */
