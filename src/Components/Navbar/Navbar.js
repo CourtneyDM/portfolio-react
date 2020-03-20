@@ -28,6 +28,7 @@ class Navbar extends Component {
   };
 
   onPageScroll = () => {
+    // use window.visualViewPort.width to help determine the value of window.scrollY
     let link;
     if (window.scrollY >= 0 && window.scrollY < 500) {
       link = document.getElementById("nav_about");
