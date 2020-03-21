@@ -103,7 +103,7 @@
     width: 25rem;
   }
   .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption a {
-    color: inherit;
+    color: var(--orange);
     font-size: 1.2rem;
     line-height: 1.6rem;
     padding-top: 1rem;
