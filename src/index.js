@@ -8,6 +8,11 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 class App extends React.Component {
+  componentDidMount = () => {
+    // TEST: stretching width on iPhone X
+    document.getElementById("root").style.minWidth =
+      window.visualViewport.width;
+  };
   // Set navbar active links on page scroll
   setActiveLink = menu_link => {
     let active_links = document.querySelectorAll(".navbar__list_link");
