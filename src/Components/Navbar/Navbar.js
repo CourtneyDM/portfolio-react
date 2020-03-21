@@ -59,7 +59,7 @@ class Navbar extends Component {
     if (this.state.width >= 1200) {
       skills = 450;
       portfolio = 1170;
-      contact = 2575;
+      contact = 2590;
     }
     if (this.state.width >= 1536) {
       skills = 728;
