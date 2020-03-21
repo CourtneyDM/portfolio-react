@@ -91,9 +91,17 @@ $text-shadow: var(--text-shadow);
             width: 25rem;
           }
           .project__caption {
-            font-size: 1.2rem;
-            line-height: 1.6rem;
-            padding-top: 1rem;
+            a {
+              color: inherit;
+              font-size: 1.2rem;
+              line-height: 1.6rem;
+              padding-top: 1rem;
+              text-decoration: none;
+            }
+            a:hover {
+              color: $blue;
+              text-shadow: $text-shadow;
+            }
           }
         }
       }
@@ -136,10 +144,13 @@ $text-shadow: var(--text-shadow);
             line-height: 2.2rem;
           }
           .project__caption {
-            font-size: 1rem;
-            line-height: 1.4rem;
-            width: 60%;
             margin: 0 auto;
+            text-align: center;
+            width: 60%;
+            a {
+              font-size: 1rem;
+              line-height: 1.4rem;
+            }
           }
         }
       }
@@ -158,9 +169,11 @@ $text-shadow: var(--text-shadow);
         .portfolio__project {
           padding: 1rem;
           .project__caption {
-            font-size: 1.2rem;
-            line-height: 1.5rem;
             width: 90%;
+            a {
+              font-size: 1.2rem;
+              line-height: 1.5rem;
+            }
           }
         }
       }
@@ -191,9 +204,11 @@ $text-shadow: var(--text-shadow);
             line-height: 2.4rem;
           }
           .project__caption {
-            font-size: 1.4rem;
-            line-height: 1.8rem;
             width: 80%;
+            a {
+              font-size: 1.4rem;
+              line-height: 1.8rem;
+            }
           }
         }
       }

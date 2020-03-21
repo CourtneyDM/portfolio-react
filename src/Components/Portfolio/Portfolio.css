@@ -102,10 +102,16 @@
     height: auto;
     width: 25rem;
   }
-  .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption {
+  .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption a {
+    color: inherit;
     font-size: 1.2rem;
     line-height: 1.6rem;
     padding-top: 1rem;
+    text-decoration: none;
+  }
+  .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption a:hover {
+    color: var(--blue);
+    text-shadow: var(--text-shadow);
   }
 }
 
@@ -139,10 +145,13 @@
     line-height: 2.2rem;
   }
   .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+  }
+  .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption a {
     font-size: 1rem;
     line-height: 1.4rem;
-    width: 60%;
-    margin: 0 auto;
   }
 }
 
@@ -155,9 +164,11 @@
     padding: 1rem;
   }
   .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption {
+    width: 90%;
+  }
+  .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption a {
     font-size: 1.2rem;
     line-height: 1.5rem;
-    width: 90%;
   }
 }
 
@@ -182,9 +193,11 @@
     line-height: 2.4rem;
   }
   .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption {
+    width: 80%;
+  }
+  .portfolio__section .portfolio__content_container .portfolio__projects .portfolio__project .project__caption a {
     font-size: 1.4rem;
     line-height: 1.8rem;
-    width: 80%;
   }
 }
 
@@ -193,7 +206,8 @@
     font-size: 4rem;
     line-height: 4rem;
   }
-  .portfolio__section .portfolio__content_container .portfolio__content {
+  .portfolio__section .portfolio__content_container .portfolio__content,
+  .portfolio__section .portfolio__content_container .portfolio__content a {
     font-size: 2.2rem;
     line-height: 3.5rem;
   }
