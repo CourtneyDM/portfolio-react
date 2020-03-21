@@ -25,22 +25,36 @@ class App extends React.Component {
   // Event handler for page scroll
   onPageScroll = () => {
     // Get offsetTop for each section
-    let about = document.querySelector("#about").offsetTop,
-      skills = document.querySelector("#skills").offsetTop,
-      portfolio = document.querySelector("#portfolio").offsetTop,
-      contact = document.querySelector("#contact").offsetTop;
+    let about = document.querySelector("#about"),
+      skills = document.querySelector("#skills"),
+      portfolio = document.querySelector("#portfolio"),
+      contact = document.querySelector("#contact");
 
     // Get the current Y position of the window
     let scrollYPos = window.scrollY;
 
     // Check the current Y position and set the active link based on each section's offsetTop
-    if (scrollYPos >= about && scrollYPos < skills) {
+    if (
+      about.offsetTop <= scrollYPos &&
+      about.offsetTop + about.offsetHeight > scrollYPos
+    ) {
       this.setActiveLink(document.getElementById("nav_about"));
-    } else if (scrollYPos >= skills && scrollYPos < portfolio) {
+    } else if (
+      skills.offsetTop <= scrollYPos &&
+      skills.offsetTop + skills.offsetHeight > scrollYPos
+    ) {
       this.setActiveLink(document.getElementById("nav_skills"));
-    } else if (scrollYPos >= portfolio && scrollYPos < contact) {
+    } else if (
+      portfolio.offsetTop <= scrollYPos &&
+      portfolio.offsetTop + portfolio.offsetHeight > scrollYPos
+    ) {
       this.setActiveLink(document.getElementById("nav_portfolio"));
-    } else this.setActiveLink(document.getElementById("nav_contact"));
+    } else if (
+      contact.offsetTop <= scrollYPos &&
+      contact.offsetTop + contact.offsetHeight > scrollYPos
+    ) {
+      this.setActiveLink(document.getElementById("nav_contact"));
+    }
   };
 
   render() {
