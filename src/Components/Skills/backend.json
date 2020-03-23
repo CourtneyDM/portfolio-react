@@ -1,15 +1,15 @@
 [
   {
-    "img": "../../assets/img/icons/npm.svg",
-    "name": "Node Package Manager"
-  },
-  {
-    "img": "../../assets/img/icons/nodejs.svg",
-    "name": "NodeJS"
-  },
-  {
     "img": "../../assets/img/icons/expressJS.png",
     "name": "ExpressJS"
+  },
+  {
+    "img": "../../assets/img/icons/firebase.svg",
+    "name": "Google Firebase"
+  },
+  {
+    "img": "../../assets/img/icons/graphQL.svg",
+    "name": "GraphQL"
   },
   {
     "img": "../../assets/img/icons/mongodb.svg",
@@ -20,11 +20,15 @@
     "name": "MySQL"
   },
   {
-    "img": "../../assets/img/icons/passport.png",
-    "name": "PassportJS"
+    "img": "../../assets/img/icons/npm.svg",
+    "name": "Node Package Manager"
   },
   {
-    "img": "../../assets/img/icons/firebase.svg",
-    "name": "Google Firebase"
+    "img": "../../assets/img/icons/nodejs.svg",
+    "name": "NodeJS"
+  },
+  {
+    "img": "../../assets/img/icons/passport.png",
+    "name": "PassportJS"
   }
 ]
