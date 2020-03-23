@@ -41,6 +41,7 @@ class Portfolio extends Component {
                   alt={project.title}
                   url={project.url}
                   figcaption={project.caption}
+                  technology={project.technology}
                 />
               );
             })}

@@ -1,38 +1,44 @@
 [
   {
-    "title": "Waste Not",
+    "caption": "A platform to help educate the community about preserving food and fighting hunger.",
     "img": "../../assets/img/screenshots/waste_not.jpg",
-    "caption": "A platform to help educate the community about preserving food and fighting hunger. The goal is to bridge the gap between food waste and hunger by managing your food inventory and connecting you with non-profit organizations to distribute overage of food where needed.",
+    "technology": "Bootstrap, CSS, Express, JavaScript, MongoDB, Node, ReactJS",
+    "title": "Waste Not",
     "url": "https://waste-not-dallas.herokuapp.com"
   },
   {
-    "title": "Hangman",
+    "caption": "A classic game of Hangman but with a superhero twist.",
     "img": "../../assets/img/screenshots/hangman.jpg",
-    "caption": "A classic game of Hangman but with a superhero twist. Guess the alias of a randomly selected superhero, or meet your fate!",
+    "technology": "CSS, HTML, JavaScript",
+    "title": "Hangman",
     "url": "https://courtneydm.github.io/game-hangman"
   },
   {
-    "title": "Star Wars Game",
+    "caption": "A Star Wars-themed game where you chose a character and defeat your opponents. May the Force be with you.",
     "img": "../../assets/img/screenshots/starwars.jpg",
-    "caption": "An interactive Star Wars-themed game where the objective is to select a character and defeat the remaining characters. May the Force be with you.",
+    "technology": "CSS, HTML, JavaScript/jQuery",
+    "title": "Star Wars Game",
     "url": "https://courtneydm.github.io/game-star-wars"
   },
   {
-    "title": "HarkUp",
+    "caption": "A talk-to-speech companion that converts an article's 'URL' into readable text and is played back.",
     "img": "../../assets/img/screenshots/harkup.jpg",
-    "caption": "A talk-to-speech companion that takes the 'URL' of an article, converts it to readable text and then plays back the article.",
+    "technology": "Bootstrap, CSS, Express, Handlebars, HTML, MySQL, Node",
+    "title": "HarkUp",
     "url": "https://harkup.herokuapp.com"
   },
   {
-    "title": "Memory Challenge",
+    "caption": "An interactive game that tests your memory skills.",
     "img": "../../assets/img/screenshots/memory.jpg",
-    "caption": "An interactive game that tests your memory skills. Up for a challenge? Click the image to see if you can get a perfect score!",
+    "technology": "CSS, Express, HTML, MongoDB, ReactJS",
+    "title": "Memory Challenge",
     "url": "https://domino-memory-challenge.herokuapp.com"
   },
   {
-    "title": "Crystals Game",
+    "caption": "A game where you collect crystals without going over the targeted score.",
     "img": "../../assets/img/screenshots/crystals.jpg",
-    "caption": "A fun, interactive game where you gather enough crystals without going over the randomly generated target score.",
+    "technology": "CSS, HTML, JavaScript/jQuery",
+    "title": "Crystals Game",
     "url": "https://courtneydm.github.io/game-crystals"
   }
 ]

@@ -12,10 +12,21 @@ export const Figure = props => {
         data-heading={props.projectHeading}
         data-src={props.imgSrc}
       />
-      <figcaption className='project__caption'>
-        <a href={props.url} target='_blank' rel='noopener noreferrer'>
+      <figcaption>
+        <p className='project__caption'>
+          <b>Description: </b>
           {props.figcaption}
-        </a>
+        </p>
+        <p className='project__caption'>
+          <b>Technologies: </b>
+          {props.technology}
+        </p>
+        <p className='project__caption'>
+          <b>Site: </b>
+          <a href={props.url} target='_blank' rel='noopener noreferrer'>
+            {props.url}
+          </a>
+        </p>
       </figcaption>
     </figure>
   );

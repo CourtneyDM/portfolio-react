@@ -90,17 +90,25 @@ $text-shadow: var(--text-shadow);
             height: auto;
             width: 25rem;
           }
+          .project__caption,
+          .project__caption a,
+          .project__caption b {
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+          }
           .project__caption {
+            padding-top: 1rem;
+            text-align: left;
             a {
               color: $orange;
-              font-size: 1.2rem;
-              line-height: 1.6rem;
-              padding-top: 1rem;
               text-decoration: none;
             }
             a:hover {
               color: $blue;
               text-shadow: $text-shadow;
+            }
+            b {
+              font-weight: bold;
             }
           }
         }
@@ -143,14 +151,15 @@ $text-shadow: var(--text-shadow);
             font-size: 2.2rem;
             line-height: 2.2rem;
           }
+          .project__caption,
+          .project__caption a,
+          .project__caption b {
+            font-size: 1rem;
+            line-height: 1.4rem;
+          }
           .project__caption {
             margin: 0 auto;
-            text-align: center;
             width: 60%;
-            a {
-              font-size: 1rem;
-              line-height: 1.4rem;
-            }
           }
         }
       }
@@ -168,12 +177,14 @@ $text-shadow: var(--text-shadow);
       .portfolio__projects {
         .portfolio__project {
           padding: 1rem;
+          .project__caption,
+          .project__caption a,
+          .project__caption b {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+          }
           .project__caption {
             width: 90%;
-            a {
-              font-size: 1.2rem;
-              line-height: 1.5rem;
-            }
           }
         }
       }
@@ -203,12 +214,14 @@ $text-shadow: var(--text-shadow);
             font-size: 2.4rem;
             line-height: 2.4rem;
           }
+          .project__caption,
+          .project__caption a,
+          .project__caption b {
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+          }
           .project__caption {
-            width: 80%;
-            a {
-              font-size: 1.4rem;
-              line-height: 1.8rem;
-            }
+            width: 70%;
           }
         }
       }
